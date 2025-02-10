@@ -5,56 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motor Center</title>
     <style>
-      /* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+        /* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem 0;
-}
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
 
-header h1 {
-    text-align: center;
-    margin: 0;
-}
+        header h1 {
+            text-align: center;
+            margin: 0;
+        }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
 
-nav ul li {
-    margin: 0 1rem;
-}
+        nav ul li {
+            margin: 0 1rem;
+        }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
 
-section {
-    padding: 2rem;
-    background-color: white;
-    margin: 1rem auto;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+        section {
+            padding: 2rem;
+            background-color: white;
+            margin: 1rem auto;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-}
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
 
+        .car {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .car img {
+            max-width: 150px;
+            margin-right: 1rem;
+        }
+
+        .car-details {
+            flex: 1;
+        }
     </style>
 </head>
 <body>
@@ -75,11 +89,21 @@ footer {
     </section>
     <section id="services">
         <h2>Our Services</h2>
-        <ul>
-            <li>Vehicle Repair</li>
-            <li>Maintenance</li>
-            <li>Parts and Accessories</li>
-        </ul>
+        <div class="car">
+            <img src="car1.jpg" alt="Car 1">
+            <div class="car-details">
+                <h3>Car Model 1</h3>
+                <p>Price: $20,000</p>
+            </div>
+        </div>
+        <div class="car">
+            <img src="car2.jpg" alt="Car 2">
+            <div class="car-details">
+                <h3>Car Model 2</h3>
+                <p>Price: $25,000</p>
+            </div>
+        </div>
+        <!-- Add more cars as needed -->
     </section>
     <section id="about">
         <h2>About Us</h2>
@@ -87,19 +111,18 @@ footer {
     </section>
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email: info@motorcenter.com</p>
-        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@speedstarmotorcenter.com</p>
+        <p>Phone: (+267) 71236685</p>
     </section>
     <footer>
-        <p>&copy; 2025 Motor Center. All rights reserved.</p>
+        <p>&copy; 2025 Speed Star Motor Center. All rights reserved.</p>
     </footer>
     <script>
-      // scripts.js
-document.addEventListener("DOMContentLoaded", function() {
-    // Add any interactivity here
-    console.log("Welcome to Motor Center!");
-});
-
+        // scripts.js
+        document.addEventListener("DOMContentLoaded", function() {
+            // Add any interactivity here
+            console.log("Welcome to Motor Center!");
+        });
     </script>
 </body>
 </html>
