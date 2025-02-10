@@ -13,15 +13,10 @@
             background-color: #f4f4f4;
         }
 
-        header {
+        nav {
             background-color: #333;
             color: white;
             padding: 1rem 0;
-        }
-
-        header h1 {
-            text-align: center;
-            margin: 0;
         }
 
         nav ul {
@@ -40,83 +35,55 @@
             text-decoration: none;
         }
 
-        section {
-            padding: 2rem;
-            background-color: white;
-            margin: 1rem auto;
-            max-width: 800px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
         .car {
             display: flex;
             align-items: center;
-            margin-bottom: 1rem;
+            margin: 2rem;
         }
 
         .car img {
-            max-width: 150px;
-            margin-right: 1rem;
+            max-width: 200px;
+            margin-right: 2rem;
         }
 
         .car-details {
             flex: 1;
         }
+
+        .homepage {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Motor Center</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="home">
-        <h2>Your One-Stop Shop for All Motor Needs</h2>
-        <p>At Motor Center, we offer a wide range of services for your vehicles.</p>
-    </section>
-    <section id="services">
-        <h2>Our Services</h2>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="homepage">
         <div class="car">
             <img src="car1.jpg" alt="Car 1">
             <div class="car-details">
-                <h3>Car Model 1</h3>
+                <h3>Toyota ISUZU</h3>
                 <p>Price: P20,000</p>
             </div>
         </div>
         <div class="car">
             <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.autoshippers.co.uk%2Fblog%2Fthe-most-expensive-cars-of-2020&psig=AOvVaw1cyYgxzi3c53sN1k5_C8Tf&ust=1739277380838000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLii86uPuYsDFQAAAAAdAAAAABAE" alt="Car 2">
             <div class="car-details">
-                <h3>Car Model 2</h3>
+                <h3>Audi A3</h3>
                 <p>Price: P25,000</p>
             </div>
         </div>
         <!-- Add more cars as needed -->
     </section>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Motor Center is committed to providing the best service for all your motor needs.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@speedstarmotorcenter.com</p>
-        <p>Phone: (+267) 71236685</p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Speed Star Motor Center. All rights reserved.</p>
-    </footer>
     <script>
         // scripts.js
         document.addEventListener("DOMContentLoaded", function() {
